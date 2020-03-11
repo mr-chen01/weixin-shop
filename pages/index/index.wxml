@@ -1,0 +1,57 @@
+<view>
+  <!-- 轮播图 -->
+  <view>
+    <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+      <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="*this">
+        <swiper-item>
+          <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 图标样式 -->
+  <view class='icon-container'>
+    <view class='icon' wx:for="{{item}}" wx:key="*this">
+      <image src='{{item.icon}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 首页视频推荐 -->
+  <!-- <view class='video-container'>
+    <text >11月20日话剧《风声》</text>
+    <view class='video'>
+      <image src="../../image/huaju.jpeg"></image>
+    </view>
+  </view> -->
+  <!-- 商品列表 -->
+
+  <view class='goods'>
+    <view class='text-container'>
+      <text>猜你喜欢</text>
+    </view>
+      <view class='goodsList' wx:for="{{goods}}" wx:key="*this" catchtap='toGoodmore' data-index='{{index}}'>
+        <view class='left'>
+          <image src='{{item.src}}'></image>
+        </view>
+        <view class='right'>
+          <text class='name'>{{item.name}}</text>
+          <text class='addres'>广州</text>
+          <view class='right-bottom'>
+            <text class='price'>￥{{item.showPrice}}</text>
+              <image src="../../image/car.png" catchtap='toCar' data-index='{{index}}'></image>
+          </view>
+        </view>
+      </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+</view>

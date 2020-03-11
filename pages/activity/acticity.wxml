@@ -1,0 +1,25 @@
+<!--pages/activity/acticity.wxml-->
+<view>
+  <!--折扣-->
+  <view wx:for="{{list}}" wx:key="*this">
+    <view class='text-container'>
+      <view class='text-container-in'>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+    <view wx:for="{{item.message}}" wx:for-item="mess" wx:key="*this">
+      <view class='image-container'>
+        <image src="{{mess.src}}"></image>
+      </view>
+      <!-- 商品详细信息 -->
+      <text style='padding:3px;font-size:40rpx;display:block'>{{mess.goodsName}}</text>
+      <!-- 详细文字信息 -->
+      <view class='detail-group'>
+        <text style='font-size:35rpx;color:red;display:inline-block'>￥{{mess.newPrice}}</text>
+        <text style="text-decoration:line-through;font-size:28rpx;display:inline-block">￥{{mess.oldPrice}}</text>
+        <text style='padding-left:420rpx;font-size:28rpx;'>还剩{{mess.time[0]}}天{{mess.time[1]}}小时</text>
+      </view>
+      <!-- 详细文字信息 end -->
+      </view>
+        </view>
+        </view>

@@ -1,0 +1,23 @@
+<!-- 个人信息 -->
+<view class="userMes">
+    <image src='../../image/icon-dw.png' class='daohang'></image>
+    <text class='name'>李四</text>
+    <text class='tel'>13531248925</text>
+    <image src='../../image/icon-arrow.png' class='arrow'></image>
+    <text class='address'>广东省汕头市金平区嘉顿小镇</text>
+</view>
+<!-- 个人信息 end-->
+<!-- 商品信息 -->
+<view class='top'>
+    <view class='goodName'>商品</view>
+    <view class='price'>单价</view>
+    <view class='count'>数量</view>
+</view>
+<view class="goodMes" wx:for="{{goodList}}" wx:key="*this">
+    <view class='goodName'>{{item.name}}</view>
+    <view class='count'>{{item.num}}</view>
+    <view class='price'>{{item.price}}</view>
+</view>
+<input type='text' placeholder='备注'></input>
+<view class='bottom'></view>
+<!-- 商品信息 end -->

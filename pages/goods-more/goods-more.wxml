@@ -1,0 +1,55 @@
+<!-- 轮播图 -->
+<view>
+    <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+        <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="*this">
+            <swiper-item>
+                <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!-- 轮播图 end-->
+<!-- 商品信息 -->
+<view class='good-mes'>
+    <view class='left'>
+        <text class='good-name'>{{good.name}}</text>
+        <text class='good-newPrice'>{{good.price}}</text>
+        <text class='good-oldPrice'>{{good.oldPrice}}</text>
+    </view>
+    <view class='right'>
+        <image src="../../image/icon-aixin1.png"></image>
+    </view>
+    <view class='remark'>
+        <text>本产品由品牌商提供发货服务</text>
+    </view>
+    <view class='good-impact'>
+        <image src="../../image/brand.png">
+        </image>
+        <text>{{good.introduce}}</text>
+    </view>
+    <text class='mesLeft'>【品牌】
+  【产地】
+  【规格】
+  【保质期】
+  【生产日期】
+  【存储方法】
+  【适用人群】</text>
+    <view class="detail" wx:for="{{list}}" wx:key="*this">
+        <text class='right'>{{item.right}}</text>
+    </view>
+    <view class='other'>
+        <image src="../../image/IMG_0466.JPG" mode='widthFix'></image>
+    </view>
+</view>
+<!-- 商品信息 end -->
+<!-- 底部栏 -->
+<view class='bottom'>
+    <view class='showCar'>
+        <image src='../../image/car.png'></image>
+        <view class='goodNum'>{{carNum}}</view>
+    </view>
+    <view class='toStore'>前往商城</view>
+    <view class='addCar' bindtap='toCar'>加入购物车</view>
+    <view class='toPay' bindtap='toPay'>前往付款</view>
+</view>
+<!-- 底部栏 end -->

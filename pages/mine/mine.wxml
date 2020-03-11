@@ -1,0 +1,17 @@
+<view>
+    <view class="user-container">
+        <view class="user-img">
+            <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="user-name">
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+
+    <view class="list-container" wx:for="{{list}}" wx:key="*this">
+        <view class="list-item">
+            <text>{{item}}</text>
+            <image src="../../image/icon-arrow.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,99 @@
+
+
+.userMes {
+    background-color: white;
+    height: 65px;
+    position: relative;
+    border-bottom: 8px solid #f5f6f7;
+}
+
+.userMes .daohang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.userMes .name {
+    display: inline-block;
+    margin-left: 52px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 13px;
+}
+
+.userMes .address {
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 7px;
+    letter-spacing: 2px;
+}
+
+.top {
+    height: 40px;
+    border-bottom: 1px solid #f5f6f7;
+}
+
+.top .goodName {
+    
+    padding: 10px 0 0 10px;
+    float: left;
+}
+
+.top .count {
+    padding: 10px 20px 0 0;
+    float: right;
+}
+
+.top .price {
+    padding: 10px 11px 0 20px;
+    float: right;
+}
+
+.goodMes {
+    height: 37px;
+    border-bottom: 7px solid #f5f6f7;
+}
+
+.goodMes .goodName {
+    font-size: 15px;
+    float: left;
+    padding-left: 9px;
+    padding-top: 4px;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.goodMes .count {
+    padding-top: 4px;
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+}
+
+.goodMes .price {
+    padding-top: 4px;
+    display: block;
+    float: right;
+    width: 59px;
+    text-align: center;
+}
+input{
+    height: 40px;
+}
+.bottom{
+    width: 100%;
+    height: 100vh;
+    background-color:  #f5f6f7;
+}

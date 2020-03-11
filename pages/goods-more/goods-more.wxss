@@ -1,0 +1,126 @@
+/* pages/goods-more/goods-more.wxss */
+.u-wrp-bnr{
+  height:200px;
+}
+.good-mes{
+  width: 100%;
+  position: relative;
+  border-bottom:1px solid #ededed; 
+}
+
+.left{
+  width: 248px;
+}
+.left .good-name{
+  margin:10px 0px 10px 6px;
+ display: block;
+}
+.left .good-newPrice{
+  font-size: 20px;
+  color: red;
+  margin: 10px 8px 8px 3px;
+}
+.left .good-oldPrice{
+font-size: 15px;
+  text-decoration: line-through;
+}
+.right image{
+  padding: 5px;
+  position: absolute;
+  top:-3px;
+  right: 7px;
+  height: 25px;
+  width: 25px;
+}
+
+
+.remark text{
+  display: block;
+  border-bottom:7px solid #ededed;
+  box-sizing: border-box;
+  height: 31px; 
+  line-height: 24px;
+  font-size: 10px;
+
+}
+.good-impact{
+  position: relative;
+ border-bottom:7px solid #ededed;
+}
+.good-impact image{
+ position: absolute;
+ top: 15px;
+ bottom: 74px;
+ left: 10px;
+  width: 40px;
+  height: 40px;
+}
+.good-impact text{
+  display: block;
+  margin-top: 5px;
+  margin-left: 53px;
+  font-size: 12.5px;
+}
+.good-mes .mesLeft{
+    float: left;
+  padding-left:10px;
+  padding-right: 13px; 
+}
+.good-mes .detail{
+    display:inline;
+    /* float: left; */
+}
+.bottom{
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+}
+.bottom .showCar image{
+  margin-left: 13px;
+  height: 35px; 
+  width: 50px;}
+
+.bottom .showCar .goodNum{
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  top: -2px;
+  text-align: center;
+  border-radius: 50%;
+  line-height:20px;
+}
+.bottom .showCar{
+  width: 25%;
+  background-color: white;
+}
+.bottom .toStore{
+  width: 25%;
+  color: white;
+  background-color: #ffa500;
+  text-align: center;
+  line-height:40px;
+   font-size:13px;
+}
+.bottom .addCar{
+  width: 25%;
+  background-color: #00aaef;
+  text-align: center;
+   line-height:40px;
+    font-size:13px;
+    color: white;
+}
+.bottom .toPay{
+  width: 25%;
+  background-color: #69c3aa;
+  text-align: center;
+   line-height:40px;
+   font-size:13px;
+   color: white;
+}
+
+

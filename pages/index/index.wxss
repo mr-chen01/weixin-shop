@@ -1,0 +1,82 @@
+.header-container{
+    width:100%;
+    height:86rpx;
+    text-align:center;
+    line-height:86rpx;
+    background-color:#69c3aa;
+}
+
+.header-word{
+    font-size:32rpx;
+    color:#fff;
+}
+
+.u-wrp-bnr{
+  height:200px;
+}
+.icon-container{
+  background-color: white;
+  display: flex;  
+    padding: 15px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing:border box;
+}
+
+.icon-container .icon image{
+  width: 80rpx;
+  height: 80rpx;
+  /* border:1px solid red; */
+}
+.icon-container .icon{
+  height: 160rpx;
+  width: 80rpx;
+  padding: 0 16px;
+  box-sizing:border box;
+}
+/* .video-container   {
+  text-align: center;
+} */
+.text-container{
+  padding-left: 20rpx;
+  border-top: 20rpx solid #f5f6f7;
+  border-bottom: 1px solid black;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-weight: bold;
+}
+.goodsList{
+  display: flex;
+  position: relative;
+  border-bottom:1px solid #f5f6f7;
+}
+.left image{
+  padding:10px; 
+  width: 200rpx;
+  height: 200rpx;
+}
+.right{
+  display: flex;
+  flex-direction:column;
+}
+.right-bottom {
+  
+}
+.right-bottom image{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.right .name{
+  padding-top:36rpx; 
+}
+.right .addres{
+  padding: 10rpx 0;
+  font-size: 30rpx;
+  color: #929292;
+}
+.right .price{
+  color:#ff1493;
+}
